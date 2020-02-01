@@ -15,14 +15,14 @@ game.container (div normally)
 ````
 
 ## Assets
-By default, QICI editor will pack raw assets(like image, json files, .etc) to zip format file with suffix .bin, when the game [project is published](../Publish/index.html), only .bin files will be published, the raw assets will be discarded.
+By default, QICI editor will pack raw assets(like image, json files, etc) to zip format file with suffix .bin, when the game [project is published](../Publish/index.html), only .bin files will be published, the raw assets will be discarded.
 
-But for Dom, mostly of the time we need browser to feach the raw assets, so QICI editor treat Assets/raw as a specifical floder, the content in the floder will not be packed, and will be published as what it is.
+But for Dom, most of the time we need the browser to fetch the raw assets, so QICI editor treats Assets/raw as a special folder, the content in the folder will not be packed, and will be published as what it is.
 
 ## CSS
-The Assets/css floder floder has a style.css file, it will be linked to the html for starting the game automatically. You can set the className of Dom in Inspector panel, and then define the css effect in style.css file.
+The Assets/css folder has a style.css file, it will be linked to the html for starting the game automatically. You can set the className of Dom in the Inspector panel, and then define the css effect in style.css file.
 
-## Create Dom object programmly
+## Create Dom object programmatically
 ````javascript
 // Create a Dom object
 var dom = game.add.dom();
@@ -52,7 +52,7 @@ node.pos = qc.Dom.POS_FRONT
 ````
 
 ### InnerHTML
-The div.innerHTML property. The Serializable value determine the innerHTML content to be saved or not. If you initilize the div's content in script dynamically, then you can unchecked Serializable option.
+The div.innerHTML property. The Serializable value determines the innerHTML content to be saved or not. If you initialize the div's content in script dynamically, then you can unchecked Serializable option.
 ````javascript
 node.innerHTML = 'QICI Engine';
 node.serializable = true;
